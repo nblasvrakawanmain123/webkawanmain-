@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Trip Gunung Dempo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <a href="profil.html" style="text-decoration:none;">
+      <button style="margin-bottom: 20px;">← Kembali ke Profil</button>
+    </a>
+
+    
+    <img src="images/img3.jpg" alt="Gunung Dempo" class="logo-header" />
+
+    <h1>🌋 Open Trip Gunung Dempo</h1>
+    <p class="tanggal">Tanggal: 5–8 Desember 2025<br>Gabung sekarang, rasakan pengalaman tak terlupakan!</p>
+
+    
+    <div class="buttons">
+      <button onclick="showContent('include')">✅ Include</button>
+      <button onclick="showContent('peralatan')">🎒 Peralatan Peserta</button>
+      <button onclick="showContent('meeting')">📍 Meeting Point</button>
+    </div>
+
+    
+    <div id="content" class="content-box"></div>
+
+    
+    <div class="content-box">
+      <h3>⏳ Countdown ke Trip:</h3>
+      <p id="countdown"></p>
+    </div>
+
+    
+    <div class="content-box">
+      <h3>📝 Form Pendaftaran Peserta</h3>
+      <form id="formPendaftaran">
+        <label>Nama:</label>
+        <input type="text" name="nama" required />
+
+        <label>No. HP:</label>
+        <input type="tel" name="hp" required />
+
+        <label>Meeting Point:</label>
+        <select name="meeting_point" required>
+          <option value="Palembang">Palembang</option>
+          <option value="Bengkulu">Bengkulu</option>
+          <option value="Basecamp">Basecamp</option>
+        </select>
+
+        <label>Catatan:</label>
+        <textarea name="catatan"></textarea>
+
+        <button type="submit">Daftar Sekarang</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Trip Gunung Kerinci</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <a href="profil.html" style="text-decoration:none;">
+      <button style="margin-bottom: 20px;">← Kembali ke Profil</button>
+    </a>
+
+    <!-- Gambar header -->
+    <img src="images/kerinci.jpg" alt="Gunung Kerinci" class="logo-header" style="width:100%; max-width:600px; border-radius:12px; margin-bottom: 20px;" />
+
+    <h1>🌋 Open Trip Gunung Kerinci</h1>
+    <p class="tanggal">Tanggal: 9–11 September 2025<br>Gabung sekarang, rasakan pengalaman seru!</p>
+
+    <div class="buttons">
+      <button onclick="showContent('include')">✅ Include</button>
+      <button onclick="showContent('peralatan')">🎒 Peralatan Peserta</button>
+      <button onclick="showContent('meeting')">📍 Meeting Point & Biaya</button>
+    </div>
+
+    <div id="content" class="content-box"></div>
+
+    <div class="content-box">
+      <h3>⏳ Countdown ke Trip:</h3>
+      <p id="countdown"></p>
+    </div>
+
+    <div class="content-box">
+      <h3>📝 Form Pendaftaran Peserta</h3>
+      <form id="formPendaftaran">
+        <label>Nama:</label>
+        <input type="text" name="nama" required />
+
+        <label>No. HP:</label>
+        <input type="tel" name="hp" required />
+
+        <label>Meeting Point:</label>
+        <select name="meeting_point" required>
+          <option value="Basecamp">Basecamp</option>
+          <option value="Pagaralam">Pagaralam</option>
+          <option value="Palembang">Palembang</option>
+        </select>
+
+        <label>Catatan:</label>
+        <textarea name="catatan"></textarea>
+
+        <button type="submit">Daftar Sekarang</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script-kerinci.js"></script>
+</body>
+</html>
